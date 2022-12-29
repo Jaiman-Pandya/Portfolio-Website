@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link rel="icon" href="images/Logo.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Jaiman P. | CS</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/header.css">
+  <link rel="stylesheet" type="text/css" href="styles/buttons.css">
+  <link rel="stylesheet" type="text/css" href="styles/matrix-text.css">
+  <link rel="stylesheet" type="text/css" href="styles/gallery.css">
+  <link rel="stylesheet" type="text/css" href="styles/language-showcase.css">
+  <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/sliders.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+
+<header>
+  <div id="header-container">
+    <input id="main-nav-toggle" type="checkbox"/>
+    <label class="main-nav-button-container" for="main-nav-toggle">
+      <div class="main-nav-button" id="top-nav-button"></div>
+      <div class="main-nav-button" id="mid-nav-button"></div>
+      <div class="main-nav-button" id="bot-nav-button"></div>
+    </label>
+    <div id="header-background"></div>
+  </div>
+</header>
+
+<section class="greeting-section">
+
+  <div id="matrix-text">
+
+    <div class="main-container">
+      <h1>Hello! I'm Jaiman.</h1>
+    </div>
+
+    <div class="matrix-header-menu">
+      <input type="range" id="matrix-speed-slider">
+      <input type="range" id="matrix-density-slider" value="80">
+      <div id="matrix-header-menu-background"></div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="portfolio-section">
+  <div class="portfolio-container">
+
+    <h2>Computer Science Experience</h2>
+
+    <div class="portfolio-div">
+      <p>Although I'm a junior in high school, I have endulged myself into opportunities such as internships, research projects, and algorithmic programming. Learning along the way has allowed me 
+        to hone my skills with precision. Progressing from "hello world" into qualifying for the USA Computing Olympiad's gold division, my knowledge in the field of computer science 
+        has grown tremendously.
+      </p>
+      <a class="button1" href="https://github.com/Jaiman-Pandya" target="_blank"><span
+          class="button1span">GitHub</span></a>
+    </div>
+    <hr>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <div class="portfolio-container">
+
+    <h2>Internships and Research</h2>
+
+    <div class="portfolio-div">
+      <p>Currently, I'm part of a UCI ML Group where my role is to aid undergraduates in developing an ML model using Tensorflow and OpenPose. One of the main tasks 
+        I was engaged in was converting .py scripts into a sci-kit learn algorithm. I also joined Neurala Vox AI in late 2022, pursuing research related to machine consciousness. 
+        The main thing I've learned is how to implement WBRs and WBAs in advanced settings. In addition, I'm interested in Visual Neuroscience, which prompted me to work with a professor 
+        at UCSD in researching facial expressions with an emphasis on Mooney Faces. 
+      </p>
+      <a class="button1" href="https://www.linkedin.com/in/jaiman-p-825350234/" target="_blank"><span
+          class="button1span">LinkedIn</span></a>
+    </div>
+    <hr>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <div class="portfolio-container">
+
+    <h2>Community Service</h2>
+
+    <div class="portfolio-div">
+      <p>While learning CS has been an amazing journey, I want to share similar experiences with those around me. This has prompted me to join the School Site Council at my alma mater, which organizes 
+        extracurricular actvities for students. The largest event I organized had 100+ paricipants learning about circuits, experimenting with virtual reality, and competing in a robot competition. 
+        One of the more ambitious projects that emerged successful was Neuracode, a nonprofit I co-founded which taught 500+ students machine learning during Summer 2022. 
+      </p>
+      <a class="button1" href="https://neuracode.org/" target="_blank"><span
+          class="button1span">Neuracode</span></a>
+    </div>
+    <hr>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <canvas id="conway-footer"></canvas>
+  <footer>
+    </ul>
+    <p class="copyright">Jaiman Pandya © 2022</p>
+  </footer>
+  <div id="conway-footer-menu">
+    <button id="start-button" onclick="startGame(1)"><i class="icon ion-refresh"></i></button>
+    <input type="range" id="conway-speed-slider">
+    <input type="range" id="conway-density-slider">
+    <button id="expand-button" onclick="expandConway()"><i class="icon ion-chevron-down"></i>
+    </button>
+  </div>
+</div>
+
+<script src="scripts/language-showcase.js"></script>
+<script src="scripts/matrix-text.js"></script>
+<script src="scripts/conways-game-of-life.js"></script>
+<script src="scripts/mobile-intersect-hover.js"></script>
+<script src="scripts/change-theme-color.js" defer></script>
+
+</body>
+</html>
